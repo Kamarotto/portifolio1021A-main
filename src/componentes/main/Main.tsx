@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Projeto from '../projeto/Projeto'
+import camaroto from '../img/camaroto.png'
 import './Main.css'
 type ProjetoType = {
     id:number,
@@ -14,31 +15,41 @@ export default function Main() {
     const projetos:ProjetoType[] = [
         {
             id:1,
-            titulo:'Banda Musical Tom Jobim',
-            descricao:"Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, Barbie parte para o mundo humano em busca da verdadeira felicidade.",
-            imagem:'/barbie.png',
+            titulo:'Curso de Francês IFMS',
+            descricao:"Curso de francês realizado pelos cursos livres do IFMS.",
+            imagem:'/frances.png',
         },
         {
             id: 2,
-            titulo:'Festival de Arte e Cultura IFMS',
-            descricao:'Logo após o arco-íris, em um mundo chamado Fairytopia, vive Elina, uma bela fada das flores que sonha em ter asas. Um dia, Elina percebe que sua casa de flor está doente e seus amigos não podem mais voar. Cheia de coragem, ela parte em uma fantástica jornada para encontrar Azura, a guardiã da Cidade das Fadas, já que ela não é afetada pelo feitiço que causou todos os problemas.',
-            imagem:'/fairytopia.jpg',
+            titulo:'Jiu-Jitsu',
+            descricao:'Atualmente sou faixa roxa de jiu jitsu, recentemente lutei na Décima Edição da Copa Amizade de Umuarama, conseguindo ficar em segundo lugar em uma categoria de 10kg a mais que a minha',
+            imagem:'/jiu.png',
         },
         {   
             id: 3,
             titulo:'Informática para Internet',
-            descricao: "Mundos mágicos, fadas e cavalos voadores são alguns dos elementos encontrados neste filme da Barbie. Ela precisa viajar a um mundo encantado para salvar Ken. Nesta aventura, serão revelados segredos e algumas amizades serão testadas.",
-            imagem:'/segredo-das-fadas.jpg',
+            descricao: "Curso o terceiro ano de Informática para Internet no IFMS",
+            imagem:'/ifms.jpeg',
+        },
+        {   
+            id: 4,
+            titulo:'Interclasse IFMS',
+            descricao: "Minha turma ficou em primeiro lugar de interclasse, graças ao André (André te amo)",
+            imagem:'/interclasse.png',
         }
     ]
 
     function TrataTexto(e:React.ChangeEvent<HTMLInputElement>){
-        //Como eu faço para mudar o texto para "TERE"
-        setTexto(e.target.value)
+setTexto(e.target.value)
     }
 
     return (
         <>
+        <div><img className='img-apresentacao' src={camaroto} alt="" />
+        <h3 className='texto-apresentacao'>Olá, meu nome é Gustavo Camaroto, sou amado pelo Terê e pela minha namorada linda na foto acima (eu e ela rs), abaixo teremos algumas das coisas que já fiz durante o período que estive no IFMS</h3>
+        </div>
+       
+        <hr />
             <div className="campo-de-pesquisa">
                 <p>Buscar um projeto:</p>
                 <input type="text" placeholder='Pesquisar...' onChange={TrataTexto} />
