@@ -1,5 +1,5 @@
 import './Footer.css'
-import Link from './../link/Link'
+import LinkNav from './../linknav/LinkNav'
 import imagem1 from "./../img/logokamarottorodape.png"
 
 export function Footer(){
@@ -11,22 +11,22 @@ export function Footer(){
               </div>
                 <ul className='coisas-da-lista'>
                   <h3 className='titulo-rodape'>Inicio</h3>
-                    <li> <Link texto='Home'/> </li>
-                    <li><Link texto='Cursos'/></li>
-                    <li><Link texto='Downloads'/></li>
+                    <li><LinkNav url='#' texto='Home'/> </li>
+                    <li><LinkNav url='#' texto='Cursos'/></li>
+                    <li><LinkNav url='#' texto='Downloads'/></li>
                 </ul>
                 <ul className='coisas-da-lista'>
                   <h3 className='titulo-rodape'>Sobre Nós</h3>
-                    <li><Link texto='Informações'/></li>
-                    <li><Link texto='Empresa'/></li>
-                    <li><Link texto='Contato'/></li>
-                    <li><Link texto='Blog'/></li>
+                    <li><LinkNav url='#' texto='Informações'/></li>
+                    <li><LinkNav url='#' texto='Empresa'/></li>
+                    <li><LinkNav url='#' texto='Contato'/></li>
+                    <li><LinkNav url='#' texto='Blog'/></li>
                 </ul>
                 <ul className='coisas-da-lista'>
                   <h3 className='titulo-rodape'>Suporte</h3>
-                    <li><Link texto='FAQ'/></li>
-                    <li><Link texto='Telefones'/></li>
-                    <li><Link texto='Chat'/></li>
+                    <li><LinkNav url='#' texto='FAQ'/></li>
+                    <li><LinkNav url='#' texto='Telefones'/></li>
+                    <li><LinkNav url='#' texto='Chat'/></li>
                 </ul>
             </div>
         </nav>

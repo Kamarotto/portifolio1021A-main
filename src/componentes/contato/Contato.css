@@ -1,0 +1,97 @@
+.contato-container {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(45deg, #1450A3, rgb(55, 0, 128), #1450A3);
+    background-size: 400% 400%;
+    animation: gradientBackground 5s ease infinite;
+    color: black;
+  }
+  
+  @keyframes gradientBackground {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .contato-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: black;
+  }
+  
+  .contato-description {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .contato-info {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .contato-info li {
+    margin: 5px 0;
+  }
+  
+  .contato-form {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .form-group {
+    margin-left: 350px;
+    margin-bottom: 20px;
+    width: 1000px;
+  }
+  
+  .form-label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: black;
+  }
+  
+  .form-input,
+  .form-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 2px solid blue;
+  }
+  
+  .form-feedback {
+    font-size: 14px;
+    margin-top: 5px;
+    color: black;
+  }
+  
+  .form-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+  }
+  
+  .form-button:hover {
+    transform: scale(1.05);
+  }
+  
+  .form-button:active {
+    transform: scale(0.95);
+  }

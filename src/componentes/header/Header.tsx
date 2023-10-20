@@ -4,17 +4,17 @@ function Header(){
     return(
         <header>
             <nav>
-                <ul>
-                    <li>
+                <ul className='botoes'>
+                    <li className="button">
                         <LinkNav url="/" texto='Home'/>
                     </li>
-                    <li>
+                    <li className="button">
                         <LinkNav url="/noticias" texto='Notícia'/>
                     </li>
-                    <li>
+                    <li className="button">
                         <LinkNav url="/sobre" texto='Sobre'/>
                     </li>
-                    <li>
+                    <li className="button">
                         <LinkNav url="/contato" texto='Contato'/>
                     </li>
                 </ul>
