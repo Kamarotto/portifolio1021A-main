@@ -1,6 +1,6 @@
 import './Header.css'
-import Link from './../link/Link'
 import imagem from "./../img/logokamarotto.png"
+import LinkNav from './../linknav/LinkNav'
 
 export function Header(){
     return(
@@ -9,16 +9,16 @@ export function Header(){
             <nav>
                 <ul className='botoes'>
                     <li className='btn btn1'>
-                        <Link texto='Home'/>
+                        <LinkNav url="/" texto='Home'/>
                     </li>
                     <li className='btn btn1'>
-                        <Link texto='Notícias'/>
+                    <LinkNav url="/" texto='Notícia'/>
                     </li>
                     <li className='btn btn1'>
-                        <Link texto='Sobre'/>
+                    <LinkNav url="/" texto='Sobre'/>
                     </li>
                     <li className='btn btn1'>
-                     <Link texto='Contato'/>
+                    <LinkNav url="/" texto='Contato'/>
                     </li>
                 </ul>
             </nav>

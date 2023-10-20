@@ -1,7 +1,6 @@
 import './Footer.css'
 import Link from './../link/Link'
 import imagem1 from "./../img/logokamarottorodape.png"
-<link href='https://unpkg.com/css.gg@2.0.0/icons/css/instagram.css' rel='stylesheet'></link>
 
 export function Footer(){
     return (
