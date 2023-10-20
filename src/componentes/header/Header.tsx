@@ -1,25 +1,21 @@
 import './Header.css'
-import imagem from "./../img/logokamarotto.png"
-import LinkNav from './../linknav/LinkNav'
-
-
-export function Header(){
+import LinkNav from '../linknav/LinkNav'
+function Header(){
     return(
         <header>
-          <div className="imagem"><img src={imagem} alt="" /></div>
             <nav>
-                <ul className='botoes'>
-                    <li className='btn btn1'>
-                        <LinkNav to="/">Home</LinkNav>
+                <ul>
+                    <li>
+                        <LinkNav url="/" texto='Home'/>
                     </li>
-                    <li className='btn btn1'>
-                        <LinkNav to="/">Notícias</LinkNav>
+                    <li>
+                        <LinkNav url="/noticias" texto='Notícia'/>
                     </li>
-                    <li className='btn btn1'>
-                        <LinkNav to="/">Sobre</LinkNav>
+                    <li>
+                        <LinkNav url="/sobre" texto='Sobre'/>
                     </li>
-                    <li className='btn btn1'>
-                        <LinkNav to="/">Contato</LinkNav>
+                    <li>
+                        <LinkNav url="/contato" texto='Contato'/>
                     </li>
                 </ul>
             </nav>
